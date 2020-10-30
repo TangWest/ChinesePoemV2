@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailActivity">
+
+    <!--orderInCategory菜单项的优先级，也就是顺序，只能设置正整数，数值越大菜单项越靠前-->
+    <item
+        android:id="@+id/menu_item_1"
+        android:checkable="true"
+        android:icon="@mipmap/collect_no"
+        android:orderInCategory="100"
+        android:title="收藏"
+        android:visible="true"
+        app:showAsAction="always"/>
+</menu>

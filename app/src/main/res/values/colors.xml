@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="DarkZaoRed">#7c1823</color>
+    <color name="ZaoRed">#9E4035</color>
+    <color name="DarkPurple">#381924</color>
+    <color name="LightPurple">#b598a1</color>
+    <color name="ChineseBlue">#234A73</color>
+    <color name="ChineseWhite">#FFE5E6DA</color>
+    <color name="ChineseYellow">#AE862E</color>
+</resources>

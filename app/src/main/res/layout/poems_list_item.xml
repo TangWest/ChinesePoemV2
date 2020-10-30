@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_area_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/poem_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/poem_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="题目"
+            android:textAlignment="center"
+            android:textColor="@color/DarkZaoRed"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/poem_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="诗句"
+            android:textColor="@color/DarkZaoRed"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
