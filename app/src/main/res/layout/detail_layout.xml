@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -12,49 +13,111 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
 
-    <TextView
-        android:id="@+id/detail_text_1"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_height="match_parent"
+        android:background="@drawable/bird_vague">
 
-    <TextView
-        android:id="@+id/detail_text_2"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:text="TextView" />
+        <TextView
+            android:id="@+id/detail_text_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:maxLines="6"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text="正在加载内容，品杯茶再走。"
+            android:textAlignment="center"
+            android:textColor="@color/DarkZaoRed"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/detail_text_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        <TextView
+            android:id="@+id/detail_text_2"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/text_area_background"
+            android:maxLines="8"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textColor="@color/DarkPurple"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_text_1" />
 
-    <ListView
-        android:id="@+id/detail_list"
-        android:layout_width="match_parent"
-        android:layout_height="150dp" />
+        <TextView
+            android:id="@+id/detail_text_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="我的笔记"
+            android:textColor="@color/DarkZaoRed"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_text_2" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        <ListView
+            android:id="@+id/detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/text_area_background"
+            android:maxLines="3"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_text_3">
+        </ListView>
 
         <EditText
             android:id="@+id/send_notes_edittext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/text_area_background"
             android:ems="10"
+            android:hint="记点笔记"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:textColor="@color/LightPurple"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/send_notes_button"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/send_notes_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
-    </LinearLayout>
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/button_background"
+            android:text="发 送"
+            android:textColor="@color/ChineseLightWhite"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/send_notes_edittext" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

@@ -10,5 +10,7 @@
     <color name="LightPurple">#b598a1</color>
     <color name="ChineseBlue">#234A73</color>
     <color name="ChineseWhite">#FFE5E6DA</color>
+    <color name="ChineseLightWhite">#e2e1e4</color>
     <color name="ChineseYellow">#AE862E</color>
+    <color name="ChineseLightYellow">#B4A177</color>
 </resources>

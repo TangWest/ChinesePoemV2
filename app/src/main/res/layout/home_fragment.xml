@@ -4,42 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/search_poems_edittext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+        <ListView
+            android:id="@+id/home_list"
+            android:layout_width="360dp"
+            android:layout_height="606dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_poems_edittext"
+            app:layout_constraintVertical_bias="0.472">
+
+        </ListView>
 
         <Button
             android:id="@+id/search_poems_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_background"
+            android:text="搜 索"
+            android:textColor="@color/ChineseLightWhite"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/send_notes_edittext"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+        <EditText
+            android:id="@+id/search_poems_edittext"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/text_area_background"
+            android:ems="10"
+            android:hint="输入诗词"
+            android:inputType="textPersonName"
+            android:textColor="@color/LightPurple"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/search_poems_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:id="@+id/home_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        <TextView
+            android:id="@+id/home_noresult"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="抱歉，暂无内容。"
+            android:textAlignment="center"
+            android:textColor="@color/DarkZaoRed"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_poems_edittext" />
 
-    <TextView
-        android:id="@+id/home_noresult"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="抱歉，暂无内容。"
-        android:textAlignment="center"
-        android:textColor="@color/DarkZaoRed"
-        android:textSize="14sp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

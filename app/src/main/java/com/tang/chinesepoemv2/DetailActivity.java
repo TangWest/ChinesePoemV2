@@ -266,10 +266,10 @@ public class DetailActivity extends AppCompatActivity implements Runnable{
         String nzstr = nz.text();
         //内容逢句号等 换行
         oricontentsstr = contents.text();
-        String contentsstr = null;
+        String contentsstr = oricontentsstr;
         String[] s= {"。","？","！","；"};
         for(int i=0;i<s.length;i++){
-            contentsstr = oricontentsstr.replace(s[i], s[i]+"<br>");
+            contentsstr = contentsstr.replace(s[i], s[i]+"<br>");
         }
 
         String poemstr = "<font size='1' style='font-family:SimSun'><big><b>"+titlestr+"</b></big></font><br>"
