@@ -24,6 +24,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import org.jsoup.Jsoup;
@@ -109,11 +110,15 @@ public class DetailActivity extends AppCompatActivity implements Runnable{
                         MenuItem menuItem = menu.findItem(R.id.menu_item_1);
                         if(c==0){//没有收藏，则需改为收藏。
                             menuItem.setIcon(R.mipmap.collect_yes);
+                            Toast t = Toast.makeText(DetailActivity.this, "收藏成功", Toast.LENGTH_SHORT);
+                            t.show();
                             //数据库添加
                             addOnePoem();
                             c=1;
                         }else{
                             menuItem.setIcon(R.mipmap.collect_no);
+                            Toast t = Toast.makeText(DetailActivity.this, "取消收藏", Toast.LENGTH_SHORT);
+                            t.show();
                             //数据库删除
                             delPoem();
                             c=0;
