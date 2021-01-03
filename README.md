@@ -13,7 +13,7 @@
 
 二、	技术要点
 1.	使用技术
-（1）	爬取网站内容使用Jsoup解析，app的数据来源是https://www.shicimingju.com/的首页及搜索页的内容，包括诗词的题目、作者、内容以及鉴赏。
+（1）	爬取网站内容使用Jsoup解析，app的数据来源是https://www.shicimingju.com/ 的首页及搜索页的内容，包括诗词的题目、作者、内容以及鉴赏。
 （2）	SQLite数据库。创建了两张表，分别记录收藏的诗，和某首诗对应的笔记。
 （3）	主页面ui采用了ViewPager+fragment，完成滑动效果。
 2.	完成难点
