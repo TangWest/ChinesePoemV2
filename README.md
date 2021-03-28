@@ -23,4 +23,4 @@
 面对新知识不要有畏惧心理，要提高自己的学习能力。在大一大二我接触过andriod编程，当时感觉一头雾水，但是当时的试水让我在终于来临的正式课程中有所准备。就在课程中和项目中，要多用google已经写好的功能，比如toolbar能让页面上方功能一目了然。</br>
 </br>
 三、截图</br>
-![image](https://github.com/TangWest/ChinesePoemV2/blob/master/1.gif)
+<img src="https://github.com/TangWest/ChinesePoemV2/blob/master/1.gif" width="200" height="400"/><br/>
